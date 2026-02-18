@@ -69,7 +69,7 @@ const App: React.FC = () => {
         <h1 style={{ textAlign: 'center' }}>To-Do List</h1>
 
         <TaskForm
-          key={editingTodo?.id || todos.length}
+          key={editingTodo?.id || 'new'}
           editingTodo={editingTodo}
           onAdd={addTodo}
           onUpdate={updateTodo}
